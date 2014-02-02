@@ -1,0 +1,127 @@
+/** 
+    *@whosaroundme
+    *version du fichier 1.0
+    *@lastmodified 2014.01.20
+    *@author Romain Malnoult
+*/
+
+
+
+body {
+    background-color:#333;  
+    font-family: Helvetica, verdana, sans-serif;  
+    color: #eee; 
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+h1 a {
+    color: black;
+}
+
+nav li, .login li p  {
+    float: right;
+    list-style-type: none;
+    margin-right: 20px;
+    background-color: #ddd;
+    padding: 10px;
+    position: relative;
+    top:10px;
+
+}
+nav li a, .login li p {
+    color: #000;
+}
+.wrapper {
+    margin: 40px 70px 0 70px;    
+    background-color: #fff;
+    padding: 40px 80px;
+    color: #111;
+}
+
+.wrapper p.body {
+    min-height: 50px;
+    border: 1px solid black;
+    padding: 60px 30px;
+}
+
+.wrapper li {
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: underline;
+
+}
+
+.wrapper li a {
+        color: #000;
+        position: relative;
+    top: 15px;
+    margin-left: 15px;
+}
+
+.wrapper ul>p {
+    float: left;
+
+}
+
+
+.wrapper h2 {
+    padding-left: 30px;
+}
+
+h1 {
+    text-shadow: #FFF 2px 2px 0px,
+    #FFF -2px 2px 0px,
+    #FFF -2px -2px 0px,
+    #FFF 2px -2px 0px; 
+    font-weight: 900;
+    float: left;
+
+
+    -webkit-transition: all 0.4s ;
+    transition: all 0.4s ;
+}
+h1:hover {
+    text-shadow: #FFF 2px 2px 10px,
+    #FFF -2px 2px 10px,
+    #FFF -2px -2px 10px,
+    #FFF 2px -2px 10px; 
+}
+header {
+    padding: 0 100px 80px 100px;
+    margin: 0 0 20px 0px;
+    background-color: #333333;
+    z-index: 5;
+    border-bottom: solid 4px #ddd;
+}
+header p {
+    clear: both;
+    margin-top: 0;
+    color: #fff;
+}
+.clear {
+    clear: both;
+}
+input {
+    height: 40px;
+    width: 200px;
+    margin: 20px 20px 30px 0;
+    border: none;   
+
+
+}
+
+input:active, input:focus, input:hover {
+    -webkit-box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.4);
+    box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.4);
+}
+
+
+#footer  {
+    text-align: center;
+    font-size: 0.8em;
+    text-decoration: underline;
+}

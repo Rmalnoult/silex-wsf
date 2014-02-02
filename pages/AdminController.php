@@ -34,22 +34,31 @@ Class AdminController extends Controller
 
         $title = $this->app['request']->get('title');
         $article = $this->app['request']->get('article');
+        $tag1 = $this->app['request']->get('tag1');
+        $tag2 = $this->app['request']->get('tag2');
+
 
         if (!empty($title) && !empty($article)) {
             $sql = "INSERT INTO articles (
                 id ,
                 title ,
-                body
+                body,
+                tag1,
+                tag2
             )
             VALUES (
                 NULL ,
                 :title,
-                :body
+                :body,
+                :tag1,
+                :tag2
             )";
 
             $arguments = array(
                 ':title' => $title,
                 ':body' => $article,
+                ':tag1' => $tag1,
+                'tag2' => $tag2
             );
 
             $this->app['sql']->prepareExec($sql, $arguments);

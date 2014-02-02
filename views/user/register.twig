@@ -11,17 +11,20 @@
         </ul>
     {% endif %}
     <form action="{{ app.url_generator.generate('postRegister') }}" method="post">
-        <label for="email">Email :</label>
-        <input type="email" name="email" id="email" required />
 
-        <label for="password">Password :</label>
-        <input type="password" name="password" id="password"  required />
+        <label for="name">Name :</label> </br> 
+        <input type="text" name="name" id="name" required /> </br>
+        
+        <label for="email">Email :</label> </br> 
+        <input type="email" name="email" id="email" required /> </br>
 
-        <label for="password_confirmation">Password_confirmation :</label>
-        <input type="password" name="password_confirmation" id="password_confirmation"  required />
+        <label for="password">Password :</label> </br> 
+        <input type="password" name="password" id="password"  required /> </br>
 
-        <label for="name">Name :</label>
-        <input type="text" name="name" id="name" required />
+        <label for="password_confirmation">Password_confirmation :</label> </br> 
+        <input type="password" name="password_confirmation" id="password_confirmation"  required /> </br>
+
+
 
         <input type="submit" />
     </form>

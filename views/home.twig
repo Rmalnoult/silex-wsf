@@ -1,15 +1,21 @@
 {% extends "layout.twig" %}
 
 {% block content %}
-    <h1>Home</h1>
     <section>
         {% for article in articles %}
             <article>
                 <h2>{{ article.title }}</h2>
-                <p>
+                <p class="body">
                     {{ article.body }}
                 </p>
+                <ul>
+                    <p>Tags : </p>
+                    <li><a href="#">{{ article.tag1 }}</a></li>
+                    <li><a href="#">{{ article.tag2 }}</a></li>
+                </ul>
+                <div class="clear"></div>
             </article>
+
         {% endfor %}
     </section>
 {% endblock %}
