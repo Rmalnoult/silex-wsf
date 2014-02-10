@@ -2,14 +2,32 @@
 
 {% block content %}
 <form action="" method="post">
-    <label for="title">Titre :</label>
-    <input type="text" name="title" id="title" />
-    <label for="article">Article :</label>
-    <textarea name="article" id="article"></textarea>
-    <label for="tag1">Tag 1</label>
-    <input type="text" name="tag1"/>
-    <label for="tag2">Tag 2</label>
-    <input type="text" name="tag2"/>
+
+
+	<table>
+		<tr>
+			<th><label for="title">Titre :</label></th>
+			<th>
+				<input type="text" name="title" id="title" />
+			</th>
+					</tr>
+					<tr>
+			<th>
+				<label for="article">Article :</label>
+			</th>
+			<th>
+				<textarea name="article" id="article"></textarea>
+			</th>
+		</tr>
+		<tr>
+			<th>
+				<label for="tag">Tag</label>
+			</th>
+			<th>
+				<input type="text" name="tag"/>
+			</th>
+		</tr>
+	</table>
 
     <input type="submit" />
 </form>

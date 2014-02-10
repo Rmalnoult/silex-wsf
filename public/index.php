@@ -38,14 +38,14 @@ $app->get('/', function () use ($app) {
 ->bind('home');
 
 //Création route /admin
-$app->get('/admin/articles', function () use ($app) {
+$app->get('/admin', function () use ($app) {
     $c = new AdminController($app);
     return $c->getArticle();
 })
 ->bind('getAdmin');
 
 //route post /admin
-$app->post('/admin/articles', function () use ($app) {
+$app->post('/admin', function () use ($app) {
     $c = new AdminController($app);
     return $c->postArticle();
 })
